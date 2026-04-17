@@ -1,0 +1,35 @@
+/* ── Table ────────────────────────────────────────────────── */
+
+.crm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.crm-table th {
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--crm-text-secondary);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid var(--crm-border);
+  background: var(--crm-bg);
+  white-space: nowrap;
+}
+
+.crm-table td {
+  padding: 12px 12px;
+  border-bottom: 1px solid var(--crm-border);
+  vertical-align: middle;
+  color: var(--crm-text);
+}
+
+.crm-table tr:last-child td {
+  border-bottom: none;
+}
+
+.crm-table tbody tr:hover td {
+  background: rgba(34, 113, 177, 0.03);
+}

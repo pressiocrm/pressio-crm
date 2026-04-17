@@ -1,0 +1,61 @@
+/* ── Pagination ──────────────────────────────────────────── */
+
+.crm-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  flex-wrap: wrap;
+}
+
+.crm-pagination__info {
+  font-size: 13px;
+  color: var(--crm-text-secondary);
+}
+
+.crm-pagination__pages {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.crm-pagination__btn {
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border-radius: var(--crm-radius);
+  border: 1px solid var(--crm-border);
+  background: var(--crm-surface);
+  color: var(--crm-text);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.crm-pagination__btn:hover:not(:disabled):not(.crm-pagination__btn--active) {
+  background: var(--crm-bg);
+  border-color: #9ea3a8;
+}
+
+.crm-pagination__btn--active {
+  background: var(--crm-primary);
+  border-color: var(--crm-primary);
+  color: #fff;
+  cursor: default;
+}
+
+.crm-pagination__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.crm-pagination__ellipsis {
+  padding: 0 6px;
+  color: var(--crm-text-secondary);
+  font-size: 13px;
+  line-height: 32px;
+}

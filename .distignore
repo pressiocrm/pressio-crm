@@ -1,0 +1,20 @@
+# Files excluded from the WordPress.org plugin zip.
+.git
+.gitignore
+.claude
+CLAUDE.md
+node_modules
+src
+package.json
+package-lock.json
+vite.config.js
+.distignore
+.editorconfig
+.eslintrc
+.prettierrc
+*.md
+!readme.txt
+demo-*.csv
+solo.yml
+*.pen
+readme.md

@@ -1,0 +1,94 @@
+/* ── Form controls ───────────────────────────────────────── */
+
+.crm-input,
+.crm-select,
+.crm-textarea {
+  display: block;
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 13px;
+  font-family: inherit;
+  color: var(--crm-text);
+  background: var(--crm-surface);
+  border: 1px solid var(--crm-border-strong);
+  border-radius: var(--crm-radius);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+  appearance: none;
+}
+
+.crm-input:focus,
+.crm-select:focus,
+.crm-textarea:focus {
+  border-color: var(--crm-primary);
+  box-shadow: 0 0 0 2px rgba(34, 113, 177, 0.15);
+}
+
+.crm-input::placeholder,
+.crm-textarea::placeholder {
+  color: var(--crm-text-secondary);
+  opacity: 0.7;
+}
+
+.crm-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2350575e' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.crm-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* ── Error states ────────────────────────────────────────── */
+
+.crm-input--error,
+.crm-select--error,
+.crm-textarea--error {
+  border-color: var(--crm-danger);
+}
+
+.crm-input--error:focus,
+.crm-select--error:focus,
+.crm-textarea--error:focus {
+  box-shadow: 0 0 0 2px rgba(214, 54, 56, 0.15);
+}
+
+/* ── Form group & labels ─────────────────────────────────── */
+
+.crm-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+.crm-form-group:last-child {
+  margin-bottom: 0;
+}
+
+.crm-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--crm-text);
+}
+
+.crm-label--required::after {
+  content: ' *';
+  color: var(--crm-danger);
+}
+
+.crm-help-text {
+  font-size: 12px;
+  color: var(--crm-text-secondary);
+  margin-top: 3px;
+}
+
+.crm-error-text {
+  font-size: 12px;
+  color: var(--crm-danger);
+  margin-top: 3px;
+}

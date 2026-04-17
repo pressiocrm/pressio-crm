@@ -1,0 +1,326 @@
+# Copyright (C) 2026 Pressio CRM
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pressio CRM 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pressio-crm\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-03-28T01:55:57+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: pressio-crm\n"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: pressio-crm.php
+#: includes/integrations/class-cf7-integration.php:39
+#: includes/modules/class-admin-module.php:29
+#: includes/modules/class-admin-module.php:30
+msgid "Pressio CRM"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: pressio-crm.php
+msgid "https://pressiocrm.com"
+msgstr ""
+
+#. Description of the plugin
+#: pressio-crm.php
+msgid "A lightweight, pipeline-first CRM for small businesses. Manage contacts, track deals, and stay on top of follow-ups — all inside WordPress."
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:140
+msgid "First name or email is required."
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:227
+msgid "Note content is required."
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:240
+msgid "Note added"
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:252
+msgid "action and ids are required."
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:258
+msgid "No valid IDs supplied."
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:277
+msgid "tag_id is required for add_tag."
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:291
+msgid "tag_id is required for remove_tag."
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:305
+msgid "owner_id is required for assign_owner."
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:308
+msgid "The specified owner does not exist."
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:320
+msgid "Unknown bulk action."
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:372
+msgid "csv is required."
+msgstr ""
+
+#: includes/api/class-rest-contacts.php:384
+msgid "CSV file is empty."
+msgstr ""
+
+#: includes/api/class-rest-deals.php:95
+msgid "pipeline_id is required."
+msgstr ""
+
+#: includes/api/class-rest-deals.php:98
+#: includes/api/class-rest-deals.php:184
+msgid "stage_id is required."
+msgstr ""
+
+#: includes/api/class-rest-deals.php:101
+#: includes/api/class-rest-tasks.php:94
+msgid "title is required."
+msgstr ""
+
+#: includes/api/class-rest-deals.php:111
+#: includes/api/class-rest-deals.php:149
+msgid "value must be 0 or greater."
+msgstr ""
+
+#: includes/api/class-rest-deals.php:114
+#: includes/api/class-rest-deals.php:152
+msgid "position must be 0 or greater."
+msgstr ""
+
+#: includes/api/class-rest-deals.php:188
+msgid "position is required."
+msgstr ""
+
+#: includes/api/class-rest-deals.php:194
+msgid "Could not move deal — stage not found."
+msgstr ""
+
+#: includes/api/class-rest-email.php:49
+msgid "Subject is required."
+msgstr ""
+
+#: includes/api/class-rest-email.php:53
+msgid "Body is required."
+msgstr ""
+
+#: includes/api/class-rest-email.php:57
+msgid "This contact has no email address."
+msgstr ""
+
+#. translators: %s: email subject
+#: includes/api/class-rest-email.php:94
+#, php-format
+msgid "Email sent: %s"
+msgstr ""
+
+#: includes/api/class-rest-email.php:109
+msgid "wp_mail() returned false. Check your mail configuration."
+msgstr ""
+
+#: includes/api/class-rest-email.php:113
+msgid "Email could not be sent. Check your WordPress mail configuration."
+msgstr ""
+
+#: includes/api/class-rest-pipelines.php:75
+msgid "Pipeline name is required."
+msgstr ""
+
+#: includes/api/class-rest-pipelines.php:131
+msgid "Cannot delete the only pipeline."
+msgstr ""
+
+#: includes/api/class-rest-pipelines.php:150
+msgid "stages array is required."
+msgstr ""
+
+#: includes/api/class-rest-settings.php:65
+msgid "Currency must be a 3-letter ISO 4217 code."
+msgstr ""
+
+#: includes/api/class-rest-settings.php:72
+msgid "Invalid date format."
+msgstr ""
+
+#: includes/api/class-rest-tags.php:72
+msgid "Tag name is required."
+msgstr ""
+
+#: includes/api/class-rest-tasks.php:70
+msgid "Invalid due_before date format."
+msgstr ""
+
+#: includes/class-activator.php:73
+msgid "Sales Pipeline"
+msgstr ""
+
+#: includes/class-activator.php:90
+msgid "Lead"
+msgstr ""
+
+#: includes/class-activator.php:98
+msgid "Qualified"
+msgstr ""
+
+#: includes/class-activator.php:106
+msgid "Proposal"
+msgstr ""
+
+#: includes/class-activator.php:114
+msgid "Negotiation"
+msgstr ""
+
+#: includes/class-activator.php:122
+msgid "Closed Won"
+msgstr ""
+
+#: includes/framework/class-controller.php:25
+msgid "You do not have permission to access CRM data."
+msgstr ""
+
+#: includes/framework/class-controller.php:41
+msgid "You do not have permission to manage CRM settings."
+msgstr ""
+
+#: includes/framework/class-controller.php:69
+msgid "Resource not found."
+msgstr ""
+
+#: includes/framework/class-controller.php:86
+msgid "Validation failed."
+msgstr ""
+
+#. translators: 1: model class name, 2: record ID
+#: includes/framework/class-model.php:63
+#, php-format
+msgid "Pressio CRM: %1$s with id %2$d not found."
+msgstr ""
+
+#. translators: 1: model class name, 2: database error message
+#: includes/framework/class-model.php:88
+#, php-format
+msgid "Pressio CRM: Failed to insert %1$s. DB error: %2$s"
+msgstr ""
+
+#: includes/integrations/class-cf7-integration.php:57
+msgid "Email field name"
+msgstr ""
+
+#: includes/integrations/class-cf7-integration.php:58
+msgid "First name field name"
+msgstr ""
+
+#: includes/integrations/class-cf7-integration.php:59
+msgid "Last name field name"
+msgstr ""
+
+#: includes/integrations/class-cf7-integration.php:60
+msgid "Phone field name"
+msgstr ""
+
+#: includes/integrations/class-cf7-integration.php:61
+msgid "Company field name"
+msgstr ""
+
+#: includes/integrations/class-cf7-integration.php:65
+msgid "Pressio CRM Integration"
+msgstr ""
+
+#: includes/integrations/class-cf7-integration.php:66
+msgid "Map CF7 field names to Pressio CRM contact fields. Leave blank to skip."
+msgstr ""
+
+#: includes/integrations/class-cf7-integration.php:80
+msgid "Enable"
+msgstr ""
+
+#: includes/integrations/class-cf7-integration.php:82
+msgid "Send submissions to Pressio CRM"
+msgstr ""
+
+#. translators: %s: CF7 form title
+#: includes/integrations/class-cf7-integration.php:225
+#, php-format
+msgid "Submitted form: %s"
+msgstr ""
+
+#: includes/models/class-contact-model.php:68
+msgid "Contact created"
+msgstr ""
+
+#: includes/models/class-deal-model.php:54
+msgid "Deal created"
+msgstr ""
+
+#: includes/models/class-pipeline-model.php:40
+msgid "Pipeline limit reached."
+msgstr ""
+
+#: includes/models/class-task-model.php:50
+msgid "Task created"
+msgstr ""
+
+#: includes/models/class-task-model.php:81
+msgid "Task completed"
+msgstr ""
+
+#: includes/modules/class-admin-module.php:40
+#: includes/modules/class-admin-module.php:41
+msgid "Dashboard"
+msgstr ""
+
+#: includes/modules/class-admin-module.php:49
+#: includes/modules/class-admin-module.php:50
+msgid "Contacts"
+msgstr ""
+
+#: includes/modules/class-admin-module.php:58
+#: includes/modules/class-admin-module.php:59
+msgid "Pipeline"
+msgstr ""
+
+#: includes/modules/class-admin-module.php:67
+#: includes/modules/class-admin-module.php:68
+msgid "Tasks"
+msgstr ""
+
+#: includes/modules/class-admin-module.php:76
+#: includes/modules/class-admin-module.php:77
+msgid "Settings"
+msgstr ""
+
+#. translators: 1: required PHP version, 2: current PHP version
+#: pressio-crm.php:34
+#, php-format
+msgid "Pressio CRM requires PHP %1$s or higher. You are running PHP %2$s. Please upgrade PHP or contact your host."
+msgstr ""
+
+#: src/composables/useConfirm.js:19
+msgid "Confirm"
+msgstr ""
+
+#: src/composables/useConfirm.js:20
+msgid "Cancel"
+msgstr ""
+
+#: src/stores/settings.js:27
+msgid "Settings saved"
+msgstr ""

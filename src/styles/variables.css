@@ -1,0 +1,42 @@
+/* ── Design tokens & app root reset ─────────────────────── */
+
+:root {
+  /* Brand colours */
+  --crm-primary:         #2271b1;
+  --crm-primary-hover:   #135e96;
+  --crm-success:         #00a32a;
+  --crm-danger:          #d63638;
+  --crm-warning:         #dba617;
+
+  /* Text */
+  --crm-text:            #1d2327;
+  --crm-text-secondary:  #50575e;
+
+  /* Borders & surfaces */
+  --crm-border:          #e2e8f0;
+  --crm-border-strong:   #cbd5e1;
+  --crm-bg:              #f0f0f1;
+  --crm-surface:         #ffffff;
+
+  /* Tag accent (overridden per-tag via --tag-color) */
+  --crm-tag:             #6366f1;
+
+  /* Sizing */
+  --crm-radius:          6px;
+  --crm-radius-lg:       10px;
+  --crm-shadow:          0 1px 3px rgba(0, 0, 0, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  --crm-shadow-lg:       0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#pressio-crm-root,
+#pressio-crm-root * {
+  box-sizing: border-box;
+}
+
+#pressio-crm-root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--crm-text);
+  background: var(--crm-bg);
+}

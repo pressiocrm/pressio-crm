@@ -1,0 +1,127 @@
+/* ── Card ─────────────────────────────────────────────────── */
+
+/*
+ * Cards use shadow-only borders (no explicit border property) — the
+ * 1px ring from box-shadow is more refined than a hard CSS border and
+ * matches the visual style of modern WP plugin UIs (FluentCart, etc.).
+ */
+.crm-card {
+  background: var(--crm-surface);
+  border-radius: var(--crm-radius-lg);
+  box-shadow: var(--crm-shadow);
+  padding: 20px;
+}
+
+/* ── Badges ──────────────────────────────────────────────── */
+
+.crm-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 99px;
+  background: var(--crm-bg);
+  color: var(--crm-text-secondary);
+  border: 1px solid var(--crm-border);
+  white-space: nowrap;
+}
+
+.crm-badge--success { background: #edfaef; color: #00793f; border-color: #b3e9bf; }
+.crm-badge--danger  { background: #fdf0f0; color: #a80000; border-color: #f5b8b8; }
+.crm-badge--warning { background: #fef9ec; color: #7a5300; border-color: #f5dfa0; }
+.crm-badge--info    { background: #eef4fb; color: #135e96; border-color: #aec8e8; }
+
+/* ── Tag pill ────────────────────────────────────────────── */
+
+.crm-tag-pill {
+  --tag-color: var(--crm-tag);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 99px;
+  background: color-mix(in srgb, var(--tag-color) 12%, transparent);
+  color: var(--tag-color);
+  border: 1px solid color-mix(in srgb, var(--tag-color) 30%, transparent);
+  white-space: nowrap;
+}
+
+/* ── Spinner ─────────────────────────────────────────────── */
+
+@keyframes crm-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.crm-spinner {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(34, 113, 177, 0.2);
+  border-top-color: var(--crm-primary);
+  border-radius: 50%;
+  animation: crm-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+.crm-spinner--sm { width: 16px; height: 16px; border-width: 2px; }
+.crm-spinner--lg { width: 40px; height: 40px; border-width: 4px; }
+
+/* ── Empty state ─────────────────────────────────────────── */
+
+.crm-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 24px;
+  gap: 12px;
+}
+
+/*
+ * WP admin forces .dashicons { width: 20px; height: 20px } which makes the
+ * layout box tiny when we want a large icon.  Use the wrapper+child pattern:
+ * the outer span owns the sized layout box; the inner .dashicons is overridden
+ * with !important to match.
+ */
+.crm-empty-state__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+}
+
+.crm-empty-state__icon .dashicons {
+  font-size: 48px !important;
+  width: 48px !important;
+  height: 48px !important;
+  line-height: 1 !important;
+  color: var( --crm-border );
+}
+
+.crm-empty-state__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--crm-text);
+}
+
+.crm-empty-state__description {
+  margin: 0;
+  font-size: 13px;
+  color: var(--crm-text-secondary);
+  max-width: 320px;
+}
+
+/* ── Divider ─────────────────────────────────────────────── */
+
+.crm-divider {
+  border: none;
+  border-top: 1px solid var(--crm-border);
+  margin: 16px 0;
+}

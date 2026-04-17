@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#334155"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.05" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="0" x2="0" y2="600"/><line x1="60" y1="0" x2="60" y2="600"/>
+    <line x1="120" y1="0" x2="120" y2="600"/><line x1="180" y1="0" x2="180" y2="600"/>
+    <line x1="240" y1="0" x2="240" y2="600"/><line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="360" y1="0" x2="360" y2="600"/><line x1="420" y1="0" x2="420" y2="600"/>
+    <line x1="480" y1="0" x2="480" y2="600"/><line x1="540" y1="0" x2="540" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/><line x1="660" y1="0" x2="660" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/><line x1="780" y1="0" x2="780" y2="600"/>
+    <line x1="840" y1="0" x2="840" y2="600"/><line x1="900" y1="0" x2="900" y2="600"/>
+    <line x1="960" y1="0" x2="960" y2="600"/><line x1="1020" y1="0" x2="1020" y2="600"/>
+    <line x1="1080" y1="0" x2="1080" y2="600"/><line x1="1140" y1="0" x2="1140" y2="600"/>
+    <line x1="0" y1="60" x2="1200" y2="60"/><line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="480" x2="1200" y2="480"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+  </g>
+
+  <!-- Decorative glow orbs -->
+  <circle cx="200" cy="150" r="200" fill="#3b82f6" opacity="0.07"/>
+  <circle cx="1000" cy="450" r="250" fill="#8b5cf6" opacity="0.06"/>
+  <circle cx="600" cy="300" r="150" fill="#3b82f6" opacity="0.04"/>
+
+  <!-- Kanban board illustration (represents the pipeline) -->
+  <!-- Column 1: New -->
+  <g transform="translate(340, 160)">
+    <rect width="140" height="280" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="12" y="12" width="116" height="6" rx="3" fill="#3b82f6" opacity="0.6"/>
+    <!-- Cards -->
+    <rect x="10" y="32" width="120" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="20" y="44" width="60" height="4" rx="2" fill="#64748b"/>
+    <rect x="20" y="54" width="40" height="4" rx="2" fill="#475569"/>
+    <circle cx="96" cy="52" r="8" fill="#3b82f6" opacity="0.3"/>
+
+    <rect x="10" y="92" width="120" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="20" y="104" width="70" height="4" rx="2" fill="#64748b"/>
+    <rect x="20" y="114" width="35" height="4" rx="2" fill="#475569"/>
+    <circle cx="96" cy="112" r="8" fill="#3b82f6" opacity="0.3"/>
+
+    <rect x="10" y="152" width="120" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="20" y="164" width="55" height="4" rx="2" fill="#64748b"/>
+    <rect x="20" y="174" width="45" height="4" rx="2" fill="#475569"/>
+    <circle cx="96" cy="172" r="8" fill="#3b82f6" opacity="0.3"/>
+  </g>
+
+  <!-- Column 2: In Progress -->
+  <g transform="translate(500, 160)">
+    <rect width="140" height="280" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="12" y="12" width="116" height="6" rx="3" fill="#8b5cf6" opacity="0.6"/>
+    <!-- Cards -->
+    <rect x="10" y="32" width="120" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="20" y="44" width="65" height="4" rx="2" fill="#64748b"/>
+    <rect x="20" y="54" width="50" height="4" rx="2" fill="#475569"/>
+    <circle cx="96" cy="52" r="8" fill="#8b5cf6" opacity="0.3"/>
+
+    <rect x="10" y="92" width="120" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="20" y="104" width="55" height="4" rx="2" fill="#64748b"/>
+    <rect x="20" y="114" width="42" height="4" rx="2" fill="#475569"/>
+    <circle cx="96" cy="112" r="8" fill="#8b5cf6" opacity="0.3"/>
+  </g>
+
+  <!-- Column 3: Won -->
+  <g transform="translate(660, 160)">
+    <rect width="140" height="280" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="12" y="12" width="116" height="6" rx="3" fill="#22c55e" opacity="0.6"/>
+    <!-- Cards -->
+    <rect x="10" y="32" width="120" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="20" y="44" width="72" height="4" rx="2" fill="#64748b"/>
+    <rect x="20" y="54" width="38" height="4" rx="2" fill="#475569"/>
+    <circle cx="96" cy="52" r="8" fill="#22c55e" opacity="0.3"/>
+
+    <rect x="10" y="92" width="120" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="20" y="104" width="48" height="4" rx="2" fill="#64748b"/>
+    <rect x="20" y="114" width="55" height="4" rx="2" fill="#475569"/>
+    <circle cx="96" cy="112" r="8" fill="#22c55e" opacity="0.3"/>
+
+    <rect x="10" y="152" width="120" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="20" y="164" width="60" height="4" rx="2" fill="#64748b"/>
+    <rect x="20" y="174" width="40" height="4" rx="2" fill="#475569"/>
+    <circle cx="96" cy="172" r="8" fill="#22c55e" opacity="0.3"/>
+
+    <rect x="10" y="212" width="120" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="20" y="224" width="52" height="4" rx="2" fill="#64748b"/>
+    <rect x="20" y="234" width="44" height="4" rx="2" fill="#475569"/>
+    <circle cx="96" cy="232" r="8" fill="#22c55e" opacity="0.3"/>
+  </g>
+
+  <!-- Floating accent lines connecting columns -->
+  <path d="M 480 220 Q 490 200 500 220" stroke="url(#accent)" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M 640 280 Q 650 260 660 280" stroke="url(#accent)" stroke-width="2" fill="none" opacity="0.4"/>
+
+  <!-- Small sparkle decorations -->
+  <circle cx="320" cy="180" r="2" fill="#3b82f6" opacity="0.6"/>
+  <circle cx="820" cy="200" r="2" fill="#8b5cf6" opacity="0.6"/>
+  <circle cx="380" cy="460" r="1.5" fill="#3b82f6" opacity="0.4"/>
+  <circle cx="750" cy="460" r="1.5" fill="#8b5cf6" opacity="0.4"/>
+</svg>

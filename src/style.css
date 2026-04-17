@@ -1,0 +1,15 @@
+/* ============================================================
+   Pressio CRM — Style entry point
+   Import order matters: variables first (tokens used by all),
+   then primitives, then composed patterns.
+   ============================================================ */
+
+@import './styles/variables.css';   /* :root tokens + app reset      */
+@import './styles/buttons.css';     /* .crm-btn*                      */
+@import './styles/forms.css';       /* inputs, selects, form-group    */
+@import './styles/table.css';       /* .crm-table                     */
+@import './styles/components.css';  /* card, badge, tag-pill, spinner, empty-state */
+@import './styles/layout.css';      /* page-header, utility classes   */
+@import './styles/modal.css';       /* .crm-modal*                    */
+@import './styles/toast.css';       /* .crm-toast*                    */
+@import './styles/pagination.css';  /* .crm-pagination*               */

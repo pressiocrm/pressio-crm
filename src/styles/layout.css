@@ -1,0 +1,45 @@
+/* ── Page header ─────────────────────────────────────────── */
+
+.crm-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.crm-page-header__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--crm-text);
+}
+
+.crm-page-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* ── Utility classes ─────────────────────────────────────── */
+
+.crm-text-muted   { color: var(--crm-text-secondary); }
+.crm-text-danger  { color: var(--crm-danger); }
+.crm-text-success { color: var(--crm-success); }
+
+.crm-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crm-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}

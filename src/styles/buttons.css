@@ -1,0 +1,88 @@
+/* ── Buttons ─────────────────────────────────────────────── */
+
+.crm-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: var(--crm-radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+  outline: none;
+}
+
+.crm-btn:focus-visible {
+  box-shadow: 0 0 0 2px var(--crm-surface), 0 0 0 4px var(--crm-primary);
+}
+
+.crm-btn--primary {
+  background: var(--crm-primary);
+  border-color: var(--crm-primary);
+  color: #fff;
+}
+
+.crm-btn--primary:hover {
+  background: var(--crm-primary-hover);
+  border-color: var(--crm-primary-hover);
+  color: #fff;
+}
+
+.crm-btn--secondary {
+  background: var(--crm-surface);
+  border-color: var(--crm-border);
+  color: var(--crm-text);
+}
+
+.crm-btn--secondary:hover {
+  background: var(--crm-bg);
+  border-color: #9ea3a8;
+  color: var(--crm-text);
+}
+
+.crm-btn--danger {
+  background: var(--crm-danger);
+  border-color: var(--crm-danger);
+  color: #fff;
+}
+
+.crm-btn--danger:hover {
+  background: #b02a2c;
+  border-color: #b02a2c;
+  color: #fff;
+}
+
+.crm-btn--ghost {
+  background: transparent;
+  border-color: transparent;
+  color: var(--crm-primary);
+}
+
+.crm-btn--ghost:hover {
+  background: rgba(34, 113, 177, 0.08);
+}
+
+.crm-btn--sm {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+/* WP admin forces .dashicons { width:20px; height:20px } — override for buttons */
+.crm-btn .dashicons {
+  font-size: 16px !important;
+  width: 16px !important;
+  height: 16px !important;
+  line-height: 1 !important;
+}
+
+.crm-btn:disabled,
+.crm-btn[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
